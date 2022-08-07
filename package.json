@@ -1,0 +1,15 @@
+{
+  "name": "callister",
+  "version": "1.0.0",
+  "description": "Transforms Black Mirror sources to an Adguard format.",
+  "repository": {
+    "url": "https://github.com/T145/callister",
+    "type": "git"
+  },
+  "author": "T145",
+  "license": "agpl-3.0",
+  "private": false,
+  "dependencies": {
+    "@adguard/hostlist-compiler": "file:./HostlistCompiler/"
+  }
+}

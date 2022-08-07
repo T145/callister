@@ -1,0 +1,31 @@
+{
+  "name": "Black Mirror",
+  "description": "Blacklists and whitelists that aim to promote security, safety, and sanity across the internet! ",
+  "homepage": "https://github.com/T145/black-mirror",
+  "sources": [
+    {
+      "name": "Additional Hosts - Ads and Trackers",
+      "source": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/adservers-and-trackers.txt",
+      "type": "hosts",
+      "transformations": [
+        "RemoveComments",
+        "Compress"
+      ]
+    },
+    {
+      "name": "Additional Hosts - Activation",
+      "source": "https://raw.githubusercontent.com/DRSDavidSoft/additional-hosts/master/domains/blacklist/activation.txt",
+      "type": "hosts",
+      "transformations": [
+        "RemoveComments",
+        "Compress"
+      ]
+    }
+  ],
+  "transformations": [
+    "TrimLines",
+    "RemoveEmptyLines",
+    "Deduplicate",
+    "Validate"
+  ]
+}
